@@ -20,11 +20,16 @@ export const Search = styled.div`
   text-align: center;
 `;
 
-export const Button = styled.button`
+export const ButtonSearchMore = styled.button`
   margin: 10px;
   padding: 5px;
   border-radius: 9px;
   border: 1px solid gray;
+
+  &:hover {
+    background-color: blue;
+    color: white;
+  }
 `;
 
 export const Input = styled.input`
@@ -37,6 +42,7 @@ export const Input = styled.input`
 export const Ul = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+
   padding: 20px;
 `;
 
@@ -45,71 +51,6 @@ export const Li = styled.li`
   margin: 20px;
 `;
 
-/* 
-
-@media screen and (min-width: 900px) {
-  input {
-    width: 300px;
-  }
-  .gallery {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  .photo-card {
-    width: calc(31vw - 5px);
-    height: calc(26vw - 5px);
-  }
-  .info {
-    font-size: 12px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  input {
-    width: 320px;
-  }
-  .gallery {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-  }
-  .photo-card {
-    width: calc(24vw - 5px);
-    height: calc(20vw - 5px);
-  }
-}
-
-.btn-container {
-  display: flex;
-  justify-content: center;
-}
-
-.load-more {
-  margin-bottom: 10px;
-  width: 202px;
-  min-height: 50px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
-  color: white;
-  background-color: midnightblue;
-  border: none;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  border-radius: 6px;
-  cursor: pointer;
-  text-align: center;
-}
-
-.up-btn {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  width: 40px;
-  height: 40px;
-  margin-bottom: 10px;
-  background-color: midnightblue;
-  border: none;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  border-radius: 50px;
-  cursor: pointer;
-  text-align: center;
-} */
+export const Img = styled.img`
+  width: 300px;
+`;
