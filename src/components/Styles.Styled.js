@@ -15,11 +15,16 @@ export const Search = styled.div`
   text-align: center;
 `;
 
-export const Button = styled.button`
+export const ButtonSearchMore = styled.button`
   margin: 10px;
   padding: 5px;
   border-radius: 9px;
   border: 1px solid gray;
+
+  &:hover {
+    background-color: blue;
+    color: white;
+  }
 `;
 
 export const Input = styled.input`
@@ -32,6 +37,7 @@ export const Input = styled.input`
 export const Ul = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+
   padding: 20px;
 `;
 
