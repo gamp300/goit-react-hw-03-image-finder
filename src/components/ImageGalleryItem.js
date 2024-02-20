@@ -1,10 +1,10 @@
 import React from 'react';
-import { Li, Img } from './Styles.Styled';
+import { Li } from './Styles.Styled';
 
 const ImageGalleryItem = ({ imageUrl, onImageClick }) => {
   return (
     <Li className="gallery-item" onClick={onImageClick}>
-      <Img src={imageUrl} alt="" />
+      <img src={imageUrl} alt="" />
     </Li>
   );
 };

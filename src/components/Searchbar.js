@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ButtonSearchMore, Input } from './Styles.Styled';
+import { Button, Input } from './Styles.Styled';
 
 const Searchbar = ({ onSubmit }) => {
   const [query, setQuery] = useState('');
@@ -12,9 +12,9 @@ const Searchbar = ({ onSubmit }) => {
   return (
     <header className="searchbar">
       <form className="form" onSubmit={handleSubmit}>
-        <ButtonSearchMore type="submit" className="button">
+        <Button type="submit" className="button">
           <span className="button-label">Search</span>
-        </ButtonSearchMore>
+        </Button>
 
         <Input
           className="input"

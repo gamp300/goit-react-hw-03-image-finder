@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Searchbar from './Searchbar';
 import ImageGallery from './ImageGallery';
-import ButtonLoadMore from './ButtonLoadMore.js';
+import Button from './Button';
 import Loader from './Loader';
 import Modal from './Modal';
 import { Search, Container } from './Styles.Styled';
@@ -65,7 +65,7 @@ export const App = () => {
         </Search>
         <ImageGallery images={images} onImageClick={openModal} />
         {loading && <Loader />}
-        {images.length > 0 && !loading && <ButtonLoadMore onClick={loadMore} />}
+        {images.length > 0 && !loading && <Button onClick={loadMore} />}
         {showModal && <Modal imageUrl={modalImage} onClose={closeModal} />}
       </Container>
     </div>
